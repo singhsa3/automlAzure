@@ -5,7 +5,7 @@
       "source": [
         "from azureml.core import Workspace, Experiment, Environment\n",
         "\n",
-        "ws = Workspace.get(name=\"quick-starts-ws-168943\", subscription_id= \"a24a24d5-8d87-4c8a-99b6-91ed2d2df51f\" , resource_group=\"aml-quickstarts-168943\")\n",
+        "ws = Workspace.get(name=\"quick-starts-ws-169190\", subscription_id= \"cdbe0b43-92a0-4715-838a-f2648cc7ad21\" , resource_group=\"aml-quickstarts-169190\")\n",
         "exp = Experiment(workspace=ws, name=\"UdacityWE\")\n",
         "\n",
         "print('Workspace name: ' + ws.name, \n",
@@ -19,13 +19,13 @@
         {
           "output_type": "stream",
           "name": "stdout",
-          "text": "Workspace name: quick-starts-ws-168943\nAzure region: southcentralus\nSubscription id: a24a24d5-8d87-4c8a-99b6-91ed2d2df51f\nResource group: aml-quickstarts-168943\n"
+          "text": "Workspace name: quick-starts-ws-169190\nAzure region: southcentralus\nSubscription id: cdbe0b43-92a0-4715-838a-f2648cc7ad21\nResource group: aml-quickstarts-169190\n"
         }
       ],
-      "execution_count": 13,
+      "execution_count": 1,
       "metadata": {
         "gather": {
-          "logged": 1640491996382
+          "logged": 1640556379500
         }
       }
     },
@@ -37,6 +37,7 @@
         "  - python=3.6.2\r\n",
         "  - scikit-learn\r\n",
         "  - numpy\r\n",
+        "  - pandas\r\n",
         "  - pip:\r\n",
         "    - azureml-defaults"
       ],
@@ -44,10 +45,10 @@
         {
           "output_type": "stream",
           "name": "stdout",
-          "text": "Writing conda_dependencies.yml\n"
+          "text": "Overwriting conda_dependencies.yml\n"
         }
       ],
-      "execution_count": 17,
+      "execution_count": 3,
       "metadata": {
         "jupyter": {
           "source_hidden": false,
@@ -66,7 +67,7 @@
         "sklearn_env = Environment.from_conda_specification(name='sklearn-env', file_path='conda_dependencies.yml')"
       ],
       "outputs": [],
-      "execution_count": 18,
+      "execution_count": 4,
       "metadata": {
         "jupyter": {
           "source_hidden": false,
@@ -78,7 +79,7 @@
           }
         },
         "gather": {
-          "logged": 1640492632007
+          "logged": 1640556404891
         }
       }
     },
@@ -114,10 +115,10 @@
           "text": "InProgress..\nSucceededProvisioning operation finished, operation \"Succeeded\"\nSucceeded\nAmlCompute wait for completion finished\n\nMinimum number of nodes requested have been provisioned\n"
         }
       ],
-      "execution_count": 4,
+      "execution_count": 5,
       "metadata": {
         "gather": {
-          "logged": 1640490855461
+          "logged": 1640556421771
         },
         "jupyter": {
           "outputs_hidden": false,
@@ -175,10 +176,10 @@
         "                             max_concurrent_runs=4)"
       ],
       "outputs": [],
-      "execution_count": 20,
+      "execution_count": 6,
       "metadata": {
         "gather": {
-          "logged": 1640492665164
+          "logged": 1640556425877
         },
         "jupyter": {
           "outputs_hidden": false,
@@ -208,7 +209,7 @@
             "application/vnd.jupyter.widget-view+json": {
               "version_major": 2,
               "version_minor": 0,
-              "model_id": "de8e8a4bc1674fb0ad96ac20926e69b9"
+              "model_id": "a9c05df21fce4d9c86dc3242d772fdd6"
             }
           },
           "metadata": {}
@@ -216,15 +217,15 @@
         {
           "output_type": "display_data",
           "data": {
-            "application/aml.mini.widget.v1": "{\"status\": \"Running\", \"workbench_run_details_uri\": \"https://ml.azure.com/runs/HD_0666a470-c3e5-42e3-ba32-223a273af82e?wsid=/subscriptions/a24a24d5-8d87-4c8a-99b6-91ed2d2df51f/resourcegroups/aml-quickstarts-168943/workspaces/quick-starts-ws-168943&tid=660b3398-b80e-49d2-bc5b-ac1dc93b5254\", \"run_id\": \"HD_0666a470-c3e5-42e3-ba32-223a273af82e\", \"run_properties\": {\"run_id\": \"HD_0666a470-c3e5-42e3-ba32-223a273af82e\", \"created_utc\": \"2021-12-26T04:24:31.900878Z\", \"properties\": {\"primary_metric_config\": \"{\\\"name\\\": \\\"Accuracy\\\", \\\"goal\\\": \\\"maximize\\\"}\", \"resume_from\": \"null\", \"runTemplate\": \"HyperDrive\", \"azureml.runsource\": \"hyperdrive\", \"platform\": \"AML\", \"ContentSnapshotId\": \"9152907d-5cc6-4c97-9fed-957844d4368f\", \"user_agent\": \"python/3.6.9 (Linux-5.4.0-1063-azure-x86_64-with-debian-buster-sid) msrest/0.6.21 Hyperdrive.Service/1.0.0 Hyperdrive.SDK/core.1.36.0\", \"space_size\": \"infinite_space_size\"}, \"tags\": {\"_aml_system_max_concurrent_jobs\": \"4\", \"_aml_system_max_total_jobs\": \"4\", \"_aml_system_max_duration_minutes\": \"10080\", \"_aml_system_policy_config\": \"{\\\"name\\\": \\\"DEFAULT\\\"}\", \"_aml_system_generator_config\": \"{\\\"name\\\": \\\"RANDOM\\\", \\\"parameter_space\\\": {\\\"C\\\": [\\\"uniform\\\", [0, 1]]}}\", \"_aml_system_primary_metric_config\": \"{\\\"name\\\": \\\"Accuracy\\\", \\\"goal\\\": \\\"maximize\\\"}\", \"_aml_system_platform_config\": \"{\\\"ServiceAddress\\\": \\\"https://southcentralus.experiments.azureml.net\\\", \\\"ServiceArmScope\\\": \\\"subscriptions/a24a24d5-8d87-4c8a-99b6-91ed2d2df51f/resourceGroups/aml-quickstarts-168943/providers/Microsoft.MachineLearningServices/workspaces/quick-starts-ws-168943/experiments/UdacityWE\\\", \\\"SubscriptionId\\\": \\\"a24a24d5-8d87-4c8a-99b6-91ed2d2df51f\\\", \\\"ResourceGroupName\\\": \\\"aml-quickstarts-168943\\\", \\\"WorkspaceName\\\": \\\"quick-starts-ws-168943\\\", \\\"ExperimentName\\\": \\\"UdacityWE\\\", \\\"Definition\\\": {\\\"Overrides\\\": {\\\"script\\\": \\\"train.py\\\", \\\"arguments\\\": [], \\\"target\\\": \\\"cpucluster\\\", \\\"framework\\\": \\\"Python\\\", \\\"communicator\\\": \\\"None\\\", \\\"maxRunDurationSeconds\\\": 2592000, \\\"nodeCount\\\": 1, \\\"priority\\\": null, \\\"environment\\\": {\\\"name\\\": \\\"sklearn-env\\\", \\\"version\\\": null, \\\"environmentVariables\\\": {\\\"EXAMPLE_ENV_VAR\\\": \\\"EXAMPLE_VALUE\\\"}, \\\"python\\\": {\\\"userManagedDependencies\\\": false, \\\"interpreterPath\\\": \\\"python\\\", \\\"condaDependenciesFile\\\": null, \\\"baseCondaEnvironment\\\": null, \\\"condaDependencies\\\": {\\\"dependencies\\\": [\\\"python=3.6.2\\\", \\\"scikit-learn\\\", \\\"numpy\\\", {\\\"pip\\\": [\\\"azureml-defaults\\\"]}]}}, \\\"docker\\\": {\\\"enabled\\\": false, \\\"baseImage\\\": \\\"mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:20211029.v1\\\", \\\"baseDockerfile\\\": null, \\\"sharedVolumes\\\": true, \\\"shmSize\\\": \\\"2g\\\", \\\"arguments\\\": [], \\\"baseImageRegistry\\\": {\\\"address\\\": null, \\\"username\\\": null, \\\"password\\\": null, \\\"registryIdentity\\\": null}, \\\"platform\\\": {\\\"os\\\": \\\"Linux\\\", \\\"architecture\\\": \\\"amd64\\\"}}, \\\"spark\\\": {\\\"repositories\\\": [], \\\"packages\\\": [], \\\"precachePackages\\\": true}, \\\"databricks\\\": {\\\"mavenLibraries\\\": [], \\\"pypiLibraries\\\": [], \\\"rcranLibraries\\\": [], \\\"jarLibraries\\\": [], \\\"eggLibraries\\\": []}, \\\"r\\\": null, \\\"inferencingStackVersion\\\": null}, \\\"history\\\": {\\\"outputCollection\\\": true, \\\"snapshotProject\\\": true, \\\"directoriesToWatch\\\": [\\\"logs\\\"]}, \\\"spark\\\": {\\\"configuration\\\": {\\\"spark.app.name\\\": \\\"Azure ML Experiment\\\", \\\"spark.yarn.maxAppAttempts\\\": 1}}, \\\"docker\\\": {\\\"useDocker\\\": false, \\\"sharedVolumes\\\": true, \\\"arguments\\\": [], \\\"shmSize\\\": \\\"2g\\\"}, \\\"hdi\\\": {\\\"yarnDeployMode\\\": \\\"cluster\\\"}, \\\"tensorflow\\\": {\\\"workerCount\\\": 1, \\\"parameterServerCount\\\": 1}, \\\"mpi\\\": {\\\"processCountPerNode\\\": 1, \\\"nodeCount\\\": 1}, \\\"pytorch\\\": {\\\"communicationBackend\\\": \\\"nccl\\\", \\\"processCount\\\": null, \\\"nodeCount\\\": 1}, \\\"paralleltask\\\": {\\\"maxRetriesPerWorker\\\": 0, \\\"workerCountPerNode\\\": 1, \\\"terminalExitCodes\\\": null}, \\\"dataReferences\\\": {}, \\\"data\\\": {}, \\\"datacaches\\\": [], \\\"outputData\\\": {}, \\\"sourceDirectoryDataStore\\\": null, \\\"amlcompute\\\": {\\\"vmSize\\\": null, \\\"vmPriority\\\": null, \\\"retainCluster\\\": false, \\\"name\\\": null, \\\"clusterMaxNodeCount\\\": null}, \\\"kubernetescompute\\\": {\\\"instanceType\\\": null}, \\\"credentialPassthrough\\\": false, \\\"command\\\": \\\"\\\", \\\"environmentVariables\\\": {}, \\\"applicationEndpoints\\\": {}}, \\\"TargetDetails\\\": null, \\\"SnapshotId\\\": \\\"9152907d-5cc6-4c97-9fed-957844d4368f\\\", \\\"TelemetryValues\\\": {\\\"amlClientType\\\": \\\"azureml-sdk-train\\\", \\\"amlClientModule\\\": \\\"[Scrubbed]\\\", \\\"amlClientFunction\\\": \\\"[Scrubbed]\\\", \\\"tenantId\\\": \\\"660b3398-b80e-49d2-bc5b-ac1dc93b5254\\\", \\\"amlClientRequestId\\\": \\\"88f2e7c5-d4bb-4802-abf0-3eca362d2d65\\\", \\\"amlClientSessionId\\\": \\\"c76461ec-ad8e-44a4-b903-05a7176293bd\\\", \\\"subscriptionId\\\": \\\"a24a24d5-8d87-4c8a-99b6-91ed2d2df51f\\\", \\\"estimator\\\": \\\"NoneType\\\", \\\"samplingMethod\\\": \\\"RANDOM\\\", \\\"terminationPolicy\\\": \\\"Default\\\", \\\"primaryMetricGoal\\\": \\\"maximize\\\", \\\"maxTotalRuns\\\": 4, \\\"maxConcurrentRuns\\\": 4, \\\"maxDurationMinutes\\\": 10080, \\\"vmSize\\\": null}}}\", \"_aml_system_resume_child_runs\": \"null\", \"_aml_system_all_jobs_generated\": \"true\", \"_aml_system_cancellation_requested\": \"false\", \"_aml_system_progress_metadata_evaluation_timestamp\": \"\\\"2021-12-26T04:24:33.248060\\\"\", \"_aml_system_progress_metadata_digest\": \"\\\"686ac9f9db853416fdbdf707cf17649b93bdc0b75f95ec61312b943778689073\\\"\", \"_aml_system_progress_metadata_active_timestamp\": \"\\\"2021-12-26T04:24:33.248060\\\"\", \"_aml_system_optimizer_state_artifact\": \"null\", \"_aml_system_outdated_optimizer_state_artifacts\": \"\\\"[]\\\"\", \"_aml_system_HD_0666a470-c3e5-42e3-ba32-223a273af82e_0\": \"{\\\"C\\\": 0.30021565164280295}\", \"_aml_system_HD_0666a470-c3e5-42e3-ba32-223a273af82e_1\": \"{\\\"C\\\": 0.012435449141987798}\", \"_aml_system_HD_0666a470-c3e5-42e3-ba32-223a273af82e_2\": \"{\\\"C\\\": 0.6096903547994639}\", \"_aml_system_HD_0666a470-c3e5-42e3-ba32-223a273af82e_3\": \"{\\\"C\\\": 0.878323986267132}\"}, \"end_time_utc\": null, \"status\": \"Running\", \"log_files\": {\"azureml-logs/hyperdrive.txt\": \"https://mlstrg168943.blob.core.windows.net/azureml/ExperimentRun/dcid.HD_0666a470-c3e5-42e3-ba32-223a273af82e/azureml-logs/hyperdrive.txt?sv=2019-07-07&sr=b&sig=F5Ez1E%2Fg2cbIULTHxcRHlURn5pgfAr%2B7iIi8LgzwGCQ%3D&skoid=b1eececf-e1e5-4bbc-809e-d6b035af9e11&sktid=660b3398-b80e-49d2-bc5b-ac1dc93b5254&skt=2021-12-26T03%3A46%3A13Z&ske=2021-12-27T11%3A56%3A13Z&sks=b&skv=2019-07-07&st=2021-12-26T04%3A15%3A34Z&se=2021-12-26T12%3A25%3A34Z&sp=r\"}, \"log_groups\": [[\"azureml-logs/hyperdrive.txt\"]], \"run_duration\": \"0:05:07\", \"run_number\": \"25\", \"run_queued_details\": {\"status\": \"Running\", \"details\": null}, \"hyper_parameters\": {\"C\": [\"uniform\", [0, 1]]}}, \"child_runs\": [{\"run_id\": \"HD_0666a470-c3e5-42e3-ba32-223a273af82e_2\", \"run_number\": 27, \"metric\": null, \"status\": \"Preparing\", \"run_type\": \"azureml.scriptrun\", \"training_percent\": null, \"start_time\": \"\", \"end_time\": \"\", \"created_time\": \"2021-12-26T04:25:33.305773Z\", \"created_time_dt\": \"2021-12-26T04:25:33.305773Z\", \"duration\": \"0:04:06\", \"hyperdrive_id\": \"0666a470-c3e5-42e3-ba32-223a273af82e\", \"arguments\": null, \"param_C\": 0.6096903547994639}, {\"run_id\": \"HD_0666a470-c3e5-42e3-ba32-223a273af82e_3\", \"run_number\": 29, \"metric\": null, \"status\": \"Preparing\", \"run_type\": \"azureml.scriptrun\", \"training_percent\": null, \"start_time\": \"\", \"end_time\": \"\", \"created_time\": \"2021-12-26T04:25:33.373823Z\", \"created_time_dt\": \"2021-12-26T04:25:33.373823Z\", \"duration\": \"0:04:06\", \"hyperdrive_id\": \"0666a470-c3e5-42e3-ba32-223a273af82e\", \"arguments\": null, \"param_C\": 0.878323986267132}, {\"run_id\": \"HD_0666a470-c3e5-42e3-ba32-223a273af82e_1\", \"run_number\": 28, \"metric\": null, \"status\": \"Preparing\", \"run_type\": \"azureml.scriptrun\", \"training_percent\": null, \"start_time\": \"\", \"end_time\": \"\", \"created_time\": \"2021-12-26T04:25:33.336547Z\", \"created_time_dt\": \"2021-12-26T04:25:33.336547Z\", \"duration\": \"0:04:06\", \"hyperdrive_id\": \"0666a470-c3e5-42e3-ba32-223a273af82e\", \"arguments\": null, \"param_C\": 0.012435449141987798}, {\"run_id\": \"HD_0666a470-c3e5-42e3-ba32-223a273af82e_0\", \"run_number\": 26, \"metric\": null, \"status\": \"Preparing\", \"run_type\": \"azureml.scriptrun\", \"training_percent\": null, \"start_time\": \"\", \"end_time\": \"\", \"created_time\": \"2021-12-26T04:25:33.282965Z\", \"created_time_dt\": \"2021-12-26T04:25:33.282965Z\", \"duration\": \"0:04:06\", \"hyperdrive_id\": \"0666a470-c3e5-42e3-ba32-223a273af82e\", \"arguments\": null, \"param_C\": 0.30021565164280295}], \"children_metrics\": {\"categories\": null, \"series\": null, \"metricName\": null}, \"run_metrics\": [], \"run_logs\": \"[2021-12-26T04:24:32.255396][API][INFO]Experiment created\\r\\n[2021-12-26T04:24:33.637083][GENERATOR][INFO]Trying to sample '4' jobs from the hyperparameter space\\r\\n[2021-12-26T04:24:34.005328][GENERATOR][INFO]Successfully sampled '4' jobs, they will soon be submitted to the execution target.\\r\\n[2021-12-26T04:25:03.394630][GENERATOR][INFO]Trying to sample '4' jobs from the hyperparameter space\\r\\n[2021-12-26T04:25:03.685905][GENERATOR][INFO]Successfully sampled '4' jobs, they will soon be submitted to the execution target.\\r\\n[2021-12-26T04:25:32.7835242Z][SCHEDULER][INFO]Scheduling job, id='HD_0666a470-c3e5-42e3-ba32-223a273af82e_2'\\r\\n[2021-12-26T04:25:32.7338629Z][SCHEDULER][INFO]Scheduling job, id='HD_0666a470-c3e5-42e3-ba32-223a273af82e_0'\\r\\n[2021-12-26T04:25:32.7527258Z][SCHEDULER][INFO]Scheduling job, id='HD_0666a470-c3e5-42e3-ba32-223a273af82e_1'\\r\\n[2021-12-26T04:25:32.8209479Z][SCHEDULER][INFO]Scheduling job, id='HD_0666a470-c3e5-42e3-ba32-223a273af82e_3'\\r\\n[2021-12-26T04:25:33.4107761Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_0666a470-c3e5-42e3-ba32-223a273af82e_1'\\r\\n[2021-12-26T04:25:33.3671654Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_0666a470-c3e5-42e3-ba32-223a273af82e_0'\\r\\n[2021-12-26T04:25:33.3884145Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_0666a470-c3e5-42e3-ba32-223a273af82e_2'\\r\\n[2021-12-26T04:25:33.4539069Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_0666a470-c3e5-42e3-ba32-223a273af82e_3'\\r\\n[2021-12-26T04:25:33.501514][GENERATOR][INFO]Max number of jobs '4' reached for experiment.\\r\\n[2021-12-26T04:25:33.639210][GENERATOR][INFO]All jobs generated.\\n\", \"graph\": {}, \"widget_settings\": {\"childWidgetDisplay\": \"popup\", \"send_telemetry\": false, \"log_level\": \"INFO\", \"sdk_version\": \"1.36.0\"}, \"loading\": false}"
+            "application/aml.mini.widget.v1": "{\"status\": \"Completed\", \"workbench_run_details_uri\": \"https://ml.azure.com/runs/HD_340d8189-e7c3-44b4-9f14-ec44864944a7?wsid=/subscriptions/cdbe0b43-92a0-4715-838a-f2648cc7ad21/resourcegroups/aml-quickstarts-169190/workspaces/quick-starts-ws-169190&tid=660b3398-b80e-49d2-bc5b-ac1dc93b5254\", \"run_id\": \"HD_340d8189-e7c3-44b4-9f14-ec44864944a7\", \"run_properties\": {\"run_id\": \"HD_340d8189-e7c3-44b4-9f14-ec44864944a7\", \"created_utc\": \"2021-12-26T22:07:10.004832Z\", \"properties\": {\"primary_metric_config\": \"{\\\"name\\\": \\\"Accuracy\\\", \\\"goal\\\": \\\"maximize\\\"}\", \"resume_from\": \"null\", \"runTemplate\": \"HyperDrive\", \"azureml.runsource\": \"hyperdrive\", \"platform\": \"AML\", \"ContentSnapshotId\": \"94e6a49d-e210-442e-80fe-32b9938d2659\", \"user_agent\": \"python/3.6.9 (Linux-5.4.0-1063-azure-x86_64-with-debian-buster-sid) msrest/0.6.21 Hyperdrive.Service/1.0.0 Hyperdrive.SDK/core.1.36.0\", \"space_size\": \"infinite_space_size\", \"score\": \"0.9112796833773087\", \"best_child_run_id\": \"HD_340d8189-e7c3-44b4-9f14-ec44864944a7_3\", \"best_metric_status\": \"Succeeded\"}, \"tags\": {\"_aml_system_max_concurrent_jobs\": \"4\", \"_aml_system_max_total_jobs\": \"4\", \"_aml_system_max_duration_minutes\": \"10080\", \"_aml_system_policy_config\": \"{\\\"name\\\": \\\"DEFAULT\\\"}\", \"_aml_system_generator_config\": \"{\\\"name\\\": \\\"RANDOM\\\", \\\"parameter_space\\\": {\\\"C\\\": [\\\"uniform\\\", [0, 1]]}}\", \"_aml_system_primary_metric_config\": \"{\\\"name\\\": \\\"Accuracy\\\", \\\"goal\\\": \\\"maximize\\\"}\", \"_aml_system_platform_config\": \"{\\\"ServiceAddress\\\": \\\"https://southcentralus.experiments.azureml.net\\\", \\\"ServiceArmScope\\\": \\\"subscriptions/cdbe0b43-92a0-4715-838a-f2648cc7ad21/resourceGroups/aml-quickstarts-169190/providers/Microsoft.MachineLearningServices/workspaces/quick-starts-ws-169190/experiments/UdacityWE\\\", \\\"SubscriptionId\\\": \\\"cdbe0b43-92a0-4715-838a-f2648cc7ad21\\\", \\\"ResourceGroupName\\\": \\\"aml-quickstarts-169190\\\", \\\"WorkspaceName\\\": \\\"quick-starts-ws-169190\\\", \\\"ExperimentName\\\": \\\"UdacityWE\\\", \\\"Definition\\\": {\\\"Overrides\\\": {\\\"script\\\": \\\"train.py\\\", \\\"arguments\\\": [], \\\"target\\\": \\\"cpucluster\\\", \\\"framework\\\": \\\"Python\\\", \\\"communicator\\\": \\\"None\\\", \\\"maxRunDurationSeconds\\\": 2592000, \\\"nodeCount\\\": 1, \\\"priority\\\": null, \\\"environment\\\": {\\\"name\\\": \\\"sklearn-env\\\", \\\"version\\\": null, \\\"environmentVariables\\\": {\\\"EXAMPLE_ENV_VAR\\\": \\\"EXAMPLE_VALUE\\\"}, \\\"python\\\": {\\\"userManagedDependencies\\\": false, \\\"interpreterPath\\\": \\\"python\\\", \\\"condaDependenciesFile\\\": null, \\\"baseCondaEnvironment\\\": null, \\\"condaDependencies\\\": {\\\"dependencies\\\": [\\\"python=3.6.2\\\", \\\"scikit-learn\\\", \\\"numpy\\\", \\\"pandas\\\", {\\\"pip\\\": [\\\"azureml-defaults\\\"]}]}}, \\\"docker\\\": {\\\"enabled\\\": false, \\\"baseImage\\\": \\\"mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:20211029.v1\\\", \\\"baseDockerfile\\\": null, \\\"sharedVolumes\\\": true, \\\"shmSize\\\": \\\"2g\\\", \\\"arguments\\\": [], \\\"baseImageRegistry\\\": {\\\"address\\\": null, \\\"username\\\": null, \\\"password\\\": null, \\\"registryIdentity\\\": null}, \\\"platform\\\": {\\\"os\\\": \\\"Linux\\\", \\\"architecture\\\": \\\"amd64\\\"}}, \\\"spark\\\": {\\\"repositories\\\": [], \\\"packages\\\": [], \\\"precachePackages\\\": true}, \\\"databricks\\\": {\\\"mavenLibraries\\\": [], \\\"pypiLibraries\\\": [], \\\"rcranLibraries\\\": [], \\\"jarLibraries\\\": [], \\\"eggLibraries\\\": []}, \\\"r\\\": null, \\\"inferencingStackVersion\\\": null}, \\\"history\\\": {\\\"outputCollection\\\": true, \\\"snapshotProject\\\": true, \\\"directoriesToWatch\\\": [\\\"logs\\\"]}, \\\"spark\\\": {\\\"configuration\\\": {\\\"spark.app.name\\\": \\\"Azure ML Experiment\\\", \\\"spark.yarn.maxAppAttempts\\\": 1}}, \\\"docker\\\": {\\\"useDocker\\\": false, \\\"sharedVolumes\\\": true, \\\"arguments\\\": [], \\\"shmSize\\\": \\\"2g\\\"}, \\\"hdi\\\": {\\\"yarnDeployMode\\\": \\\"cluster\\\"}, \\\"tensorflow\\\": {\\\"workerCount\\\": 1, \\\"parameterServerCount\\\": 1}, \\\"mpi\\\": {\\\"processCountPerNode\\\": 1, \\\"nodeCount\\\": 1}, \\\"pytorch\\\": {\\\"communicationBackend\\\": \\\"nccl\\\", \\\"processCount\\\": null, \\\"nodeCount\\\": 1}, \\\"paralleltask\\\": {\\\"maxRetriesPerWorker\\\": 0, \\\"workerCountPerNode\\\": 1, \\\"terminalExitCodes\\\": null}, \\\"dataReferences\\\": {}, \\\"data\\\": {}, \\\"datacaches\\\": [], \\\"outputData\\\": {}, \\\"sourceDirectoryDataStore\\\": null, \\\"amlcompute\\\": {\\\"vmSize\\\": null, \\\"vmPriority\\\": null, \\\"retainCluster\\\": false, \\\"name\\\": null, \\\"clusterMaxNodeCount\\\": null}, \\\"kubernetescompute\\\": {\\\"instanceType\\\": null}, \\\"credentialPassthrough\\\": false, \\\"command\\\": \\\"\\\", \\\"environmentVariables\\\": {}, \\\"applicationEndpoints\\\": {}}, \\\"TargetDetails\\\": null, \\\"SnapshotId\\\": \\\"94e6a49d-e210-442e-80fe-32b9938d2659\\\", \\\"TelemetryValues\\\": {\\\"amlClientType\\\": \\\"azureml-sdk-train\\\", \\\"amlClientModule\\\": \\\"[Scrubbed]\\\", \\\"amlClientFunction\\\": \\\"[Scrubbed]\\\", \\\"tenantId\\\": \\\"660b3398-b80e-49d2-bc5b-ac1dc93b5254\\\", \\\"amlClientRequestId\\\": \\\"1f410877-329b-4071-84f3-e809b1c4db33\\\", \\\"amlClientSessionId\\\": \\\"527f45fd-9769-443c-ac28-bca8fc553e31\\\", \\\"subscriptionId\\\": \\\"cdbe0b43-92a0-4715-838a-f2648cc7ad21\\\", \\\"estimator\\\": \\\"NoneType\\\", \\\"samplingMethod\\\": \\\"RANDOM\\\", \\\"terminationPolicy\\\": \\\"Default\\\", \\\"primaryMetricGoal\\\": \\\"maximize\\\", \\\"maxTotalRuns\\\": 4, \\\"maxConcurrentRuns\\\": 4, \\\"maxDurationMinutes\\\": 10080, \\\"vmSize\\\": null}}}\", \"_aml_system_resume_child_runs\": \"null\", \"_aml_system_all_jobs_generated\": \"true\", \"_aml_system_cancellation_requested\": \"false\", \"_aml_system_progress_metadata_evaluation_timestamp\": \"\\\"2021-12-26T22:07:11.329860\\\"\", \"_aml_system_progress_metadata_digest\": \"\\\"0315021e77d400c102d0368c48451f68ba8b9fb8e56016626b301859656517e4\\\"\", \"_aml_system_progress_metadata_active_timestamp\": \"\\\"2021-12-26T22:07:11.329860\\\"\", \"_aml_system_optimizer_state_artifact\": \"null\", \"_aml_system_outdated_optimizer_state_artifacts\": \"\\\"[]\\\"\", \"_aml_system_HD_340d8189-e7c3-44b4-9f14-ec44864944a7_0\": \"{\\\"C\\\": 0.5875521716441038}\", \"_aml_system_HD_340d8189-e7c3-44b4-9f14-ec44864944a7_1\": \"{\\\"C\\\": 0.46788240804660475}\", \"_aml_system_HD_340d8189-e7c3-44b4-9f14-ec44864944a7_2\": \"{\\\"C\\\": 0.45574108788033263}\", \"_aml_system_HD_340d8189-e7c3-44b4-9f14-ec44864944a7_3\": \"{\\\"C\\\": 0.1499567487581822}\", \"_aml_system_final_best_metric_update_retry_count\": \"1\"}, \"end_time_utc\": \"2021-12-26T22:18:18.829552Z\", \"status\": \"Completed\", \"log_files\": {\"azureml-logs/hyperdrive.txt\": \"https://mlstrg169190.blob.core.windows.net/azureml/ExperimentRun/dcid.HD_340d8189-e7c3-44b4-9f14-ec44864944a7/azureml-logs/hyperdrive.txt?sv=2019-07-07&sr=b&sig=%2FN42PDlh3X%2BmB6bIeOV%2BvwKH6ysEMj%2FbHbHfQdWek%2BI%3D&skoid=5aaa02e0-03d7-48a9-a3a0-4a0b65601cc1&sktid=660b3398-b80e-49d2-bc5b-ac1dc93b5254&skt=2021-12-26T21%3A57%3A11Z&ske=2021-12-28T06%3A07%3A11Z&sks=b&skv=2019-07-07&st=2021-12-26T22%3A19%3A12Z&se=2021-12-27T06%3A29%3A12Z&sp=r\"}, \"log_groups\": [[\"azureml-logs/hyperdrive.txt\"]], \"run_duration\": \"0:11:08\", \"run_number\": \"2\", \"run_queued_details\": {\"status\": \"Completed\", \"details\": null}, \"hyper_parameters\": {\"C\": [\"uniform\", [0, 1]]}}, \"child_runs\": [{\"run_id\": \"HD_340d8189-e7c3-44b4-9f14-ec44864944a7_2\", \"run_number\": 3, \"metric\": 0.90771768, \"status\": \"Completed\", \"run_type\": \"azureml.scriptrun\", \"training_percent\": null, \"start_time\": \"2021-12-26T22:16:24.143166Z\", \"end_time\": \"2021-12-26T22:17:46.333779Z\", \"created_time\": \"2021-12-26T22:08:11.287727Z\", \"created_time_dt\": \"2021-12-26T22:08:11.287727Z\", \"duration\": \"0:09:35\", \"hyperdrive_id\": \"340d8189-e7c3-44b4-9f14-ec44864944a7\", \"arguments\": null, \"param_C\": 0.45574108788033263, \"best_metric\": 0.90771768}, {\"run_id\": \"HD_340d8189-e7c3-44b4-9f14-ec44864944a7_1\", \"run_number\": 4, \"metric\": 0.91065303, \"status\": \"Completed\", \"run_type\": \"azureml.scriptrun\", \"training_percent\": null, \"start_time\": \"2021-12-26T22:16:25.472142Z\", \"end_time\": \"2021-12-26T22:17:44.759962Z\", \"created_time\": \"2021-12-26T22:08:11.369905Z\", \"created_time_dt\": \"2021-12-26T22:08:11.369905Z\", \"duration\": \"0:09:33\", \"hyperdrive_id\": \"340d8189-e7c3-44b4-9f14-ec44864944a7\", \"arguments\": null, \"param_C\": 0.46788240804660475, \"best_metric\": 0.91065303}, {\"run_id\": \"HD_340d8189-e7c3-44b4-9f14-ec44864944a7_3\", \"run_number\": 5, \"metric\": 0.91127968, \"status\": \"Completed\", \"run_type\": \"azureml.scriptrun\", \"training_percent\": null, \"start_time\": \"2021-12-26T22:16:14.17557Z\", \"end_time\": \"2021-12-26T22:16:49.551769Z\", \"created_time\": \"2021-12-26T22:08:11.547348Z\", \"created_time_dt\": \"2021-12-26T22:08:11.547348Z\", \"duration\": \"0:08:38\", \"hyperdrive_id\": \"340d8189-e7c3-44b4-9f14-ec44864944a7\", \"arguments\": null, \"param_C\": 0.1499567487581822, \"best_metric\": 0.91127968}, {\"run_id\": \"HD_340d8189-e7c3-44b4-9f14-ec44864944a7_0\", \"run_number\": 6, \"metric\": 0.90900396, \"status\": \"Completed\", \"run_type\": \"azureml.scriptrun\", \"training_percent\": null, \"start_time\": \"2021-12-26T22:14:45.255576Z\", \"end_time\": \"2021-12-26T22:16:10.714495Z\", \"created_time\": \"2021-12-26T22:08:11.573272Z\", \"created_time_dt\": \"2021-12-26T22:08:11.573272Z\", \"duration\": \"0:07:59\", \"hyperdrive_id\": \"340d8189-e7c3-44b4-9f14-ec44864944a7\", \"arguments\": null, \"param_C\": 0.5875521716441038, \"best_metric\": 0.91127968}], \"children_metrics\": {\"categories\": [0], \"series\": {\"Regularization Strength:\": [{\"categories\": [3, 4, 5, 6], \"mode\": \"markers\", \"name\": \"Regularization Strength:\", \"stepped\": false, \"type\": \"scatter\", \"data\": [0.45574108788033263, 0.46788240804660475, 0.1499567487581822, 0.5875521716441038]}, {\"categories\": [3, 4, 5, 6], \"mode\": \"lines\", \"name\": \"Regularization Strength:_max\", \"stepped\": true, \"type\": \"scatter\", \"data\": [0.45574108788033263, 0.46788240804660475, 0.46788240804660475, 0.5875521716441038]}], \"Max iterations:\": [{\"categories\": [3, 4, 5, 6], \"mode\": \"markers\", \"name\": \"Max iterations:\", \"stepped\": false, \"type\": \"scatter\", \"data\": [100, 100, 100, 100]}, {\"categories\": [3, 4, 5, 6], \"mode\": \"lines\", \"name\": \"Max iterations:_max\", \"stepped\": true, \"type\": \"scatter\", \"data\": [100, 100, 100, 100]}], \"Accuracy\": [{\"categories\": [3, 4, 5, 6], \"mode\": \"markers\", \"name\": \"Accuracy\", \"stepped\": false, \"type\": \"scatter\", \"data\": [0.9077176781002638, 0.9106530343007916, 0.9112796833773087, 0.9090039577836412]}, {\"categories\": [3, 4, 5, 6], \"mode\": \"lines\", \"name\": \"Accuracy_max\", \"stepped\": true, \"type\": \"scatter\", \"data\": [0.9077176781002638, 0.9106530343007916, 0.9112796833773087, 0.9112796833773087]}]}, \"metricName\": null, \"primaryMetricName\": \"Accuracy\", \"showLegend\": false}, \"run_metrics\": [{\"name\": \"best_child_by_primary_metric\", \"run_id\": \"HD_340d8189-e7c3-44b4-9f14-ec44864944a7\", \"categories\": [0], \"series\": [{\"data\": [{\"time_elapse\": [544, 576, 576], \"metric_value\": [0.9090039577836412, 0.9112796833773087, 0.9112796833773087], \"metric_name\": [\"Accuracy\", \"Accuracy\", \"Accuracy\"], \"run_id\": [\"HD_340d8189-e7c3-44b4-9f14-ec44864944a7_0\", \"HD_340d8189-e7c3-44b4-9f14-ec44864944a7_3\", \"HD_340d8189-e7c3-44b4-9f14-ec44864944a7_3\"], \"final\": [false, false, true]}]}]}], \"run_logs\": \"[2021-12-26T22:07:10.335812][API][INFO]Experiment created\\r\\n[2021-12-26T22:07:11.086049][GENERATOR][INFO]Trying to sample '4' jobs from the hyperparameter space\\r\\n[2021-12-26T22:07:11.675761][GENERATOR][INFO]Successfully sampled '4' jobs, they will soon be submitted to the execution target.\\r\\n[2021-12-26T22:07:41.455969][GENERATOR][INFO]Trying to sample '4' jobs from the hyperparameter space\\r\\n[2021-12-26T22:07:41.900219][GENERATOR][INFO]Successfully sampled '4' jobs, they will soon be submitted to the execution target.\\r\\n[2021-12-26T22:08:10.7353306Z][SCHEDULER][INFO]Scheduling job, id='HD_340d8189-e7c3-44b4-9f14-ec44864944a7_3'\\r\\n[2021-12-26T22:08:10.7748655Z][SCHEDULER][INFO]Scheduling job, id='HD_340d8189-e7c3-44b4-9f14-ec44864944a7_1'\\r\\n[2021-12-26T22:08:10.7619384Z][SCHEDULER][INFO]Scheduling job, id='HD_340d8189-e7c3-44b4-9f14-ec44864944a7_2'\\r\\n[2021-12-26T22:08:10.7878930Z][SCHEDULER][INFO]Scheduling job, id='HD_340d8189-e7c3-44b4-9f14-ec44864944a7_0'\\r\\n[2021-12-26T22:08:11.3649633Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_340d8189-e7c3-44b4-9f14-ec44864944a7_2'\\r\\n[2021-12-26T22:08:11.4432302Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_340d8189-e7c3-44b4-9f14-ec44864944a7_1'\\r\\n[2021-12-26T22:08:11.521417][GENERATOR][INFO]Max number of jobs '4' reached for experiment.\\r\\n[2021-12-26T22:08:11.6322749Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_340d8189-e7c3-44b4-9f14-ec44864944a7_3'\\r\\n[2021-12-26T22:08:11.658188][GENERATOR][INFO]All jobs generated.\\r\\n[2021-12-26T22:08:11.6468172Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_340d8189-e7c3-44b4-9f14-ec44864944a7_0'\\r\\n[2021-12-26T22:18:19.024407][CONTROLLER][INFO]Experiment was 'ExperimentStatus.RUNNING', is 'ExperimentStatus.FINISHED'.\\n\\nRun is completed.\", \"graph\": {}, \"widget_settings\": {\"childWidgetDisplay\": \"popup\", \"send_telemetry\": false, \"log_level\": \"INFO\", \"sdk_version\": \"1.36.0\"}, \"loading\": false}"
           },
           "metadata": {}
         }
       ],
-      "execution_count": 21,
+      "execution_count": 7,
       "metadata": {
         "gather": {
-          "logged": 1640492672894
+          "logged": 1640556429993
         }
       }
     },
@@ -236,8 +237,14 @@
         "parameter_values = best_run.get_details()['runDefinition']['arguments']\r\n",
         "print('\\n Accuracy:', best_run_metrics['Accuracy'])"
       ],
-      "outputs": [],
-      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": "\n Accuracy: 0.9112796833773087\n"
+        }
+      ],
+      "execution_count": 8,
       "metadata": {
         "jupyter": {
           "source_hidden": false,
@@ -247,6 +254,9 @@
           "transient": {
             "deleting": false
           }
+        },
+        "gather": {
+          "logged": 1640557125608
         }
       }
     },
@@ -259,11 +269,17 @@
         "print('Best run model is saved in model'+C1+'.joblib')\n",
         "### YOUR CODE HERE ###"
       ],
-      "outputs": [],
-      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": "Best run model is saved in model9112.joblib\n"
+        }
+      ],
+      "execution_count": 9,
       "metadata": {
         "gather": {
-          "logged": 1598276310862
+          "logged": 1640557130223
         },
         "jupyter": {
           "outputs_hidden": false,
@@ -294,23 +310,36 @@
         "    "
       ],
       "outputs": [],
-      "execution_count": null,
-      "metadata": {}
+      "execution_count": 11,
+      "metadata": {
+        "gather": {
+          "logged": 1640557619805
+        }
+      }
     },
     {
       "cell_type": "code",
       "source": [
         "from train import clean_data\n",
+        "import numpy as np\n",
+        "import pandas as pd\n",
         "\n",
         "# Use the clean_data function to clean your data.\n",
         "#x, y = clean_data(### YOUR DATA OBJECT HERE ###)\n",
-        "x, y = clean_data(ds)"
+        "x, y = clean_data(ds)\n",
+        "alltot= np.arange(len(x))\n",
+        "train= np.random.choice(alltot,size=2630, replace=False)\n",
+        "test= np.delete(alltot, train,0)\n",
+        "x_train = x.iloc[train]\n",
+        "y_train = y[train]\n",
+        "x_test= x.iloc[test]\n",
+        "y_test = y[test]"
       ],
       "outputs": [],
-      "execution_count": null,
+      "execution_count": 12,
       "metadata": {
         "gather": {
-          "logged": 1598275726969
+          "logged": 1640557621031
         },
         "jupyter": {
           "outputs_hidden": false,
@@ -332,19 +361,22 @@
         "# NOTE: DO NOT CHANGE THE experiment_timeout_minutes PARAMETER OR YOUR INSTANCE WILL TIME OUT.\n",
         "# If you wish to run the experiment longer, you will need to run this notebook in your own\n",
         "# Azure tenant, which will incur personal costs.\n",
+        "\n",
+        "training_data=pd.concat([x_train,y_train], axis=1)\n",
         "automl_config = AutoMLConfig(\n",
         "    experiment_timeout_minutes=30,\n",
-        "    task=,\n",
-        "    primary_metric=,\n",
-        "    training_data=,\n",
-        "    label_column_name=,\n",
-        "    n_cross_validations=)"
+        "    task= 'classification',\n",
+        "    primary_metric= \"accuracy\",\n",
+        "    training_data=training_data,\n",
+        "    label_column_name= \"y\",\n",
+        "    n_cross_validations= 3)\n",
+        "\n"
       ],
       "outputs": [],
-      "execution_count": null,
+      "execution_count": 13,
       "metadata": {
         "gather": {
-          "logged": 1598275665403
+          "logged": 1640557631845
         },
         "jupyter": {
           "outputs_hidden": false,
@@ -360,16 +392,35 @@
     {
       "cell_type": "code",
       "source": [
-        "# Submit your automl run\n",
-        "\n",
-        "### YOUR CODE HERE ###"
+        "# Submit your automl run\r\n",
+        "\r\n",
+        "### YOUR CODE HERE ###\r\n",
+        "from azureml.core.experiment import Experiment\r\n",
+        " \r\n",
+        "automl_experiment = Experiment(ws,'automl_experiment')\r\n",
+        "automl_run = automl_experiment.submit(automl_config)\r\n",
+        "automl_run.wait_for_completion(show_output=True)"
       ],
-      "outputs": [],
-      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": "2021-12-26:22:28:27,533 INFO     [modeling_bert.py:226] Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .\n2021-12-26:22:28:27,559 INFO     [modeling_xlnet.py:339] Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex .\n2021-12-26:22:28:57,656 INFO     [utils.py:157] NumExpr defaulting to 4 threads.\n2021-12-26:22:28:57,923 WARNING  [local_experiment_driver.py:148] Running on local machine. Note that local runs always run synchronously even if you use the parameter 'show_output=False'\n"
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": "<IPython.core.display.HTML object>",
+            "text/html": "<table style=\"width:100%\"><tr><th>Experiment</th><th>Id</th><th>Type</th><th>Status</th><th>Details Page</th><th>Docs Page</th></tr><tr><td>automl_experiment</td><td>AutoML_2a00ae8a-d186-4c34-9646-7aea42e4c453</td><td>automl</td><td>Preparing</td><td><a href=\"https://ml.azure.com/runs/AutoML_2a00ae8a-d186-4c34-9646-7aea42e4c453?wsid=/subscriptions/cdbe0b43-92a0-4715-838a-f2648cc7ad21/resourcegroups/aml-quickstarts-169190/workspaces/quick-starts-ws-169190&amp;tid=660b3398-b80e-49d2-bc5b-ac1dc93b5254\" target=\"_blank\" rel=\"noopener\">Link to Azure Machine Learning studio</a></td><td><a href=\"https://docs.microsoft.com/en-us/python/api/overview/azure/ml/intro?view=azure-ml-py\" target=\"_blank\" rel=\"noopener\">Link to Documentation</a></td></tr></table>"
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 14,
       "metadata": {
         "jupyter": {
-          "outputs_hidden": false,
-          "source_hidden": false
+          "source_hidden": false,
+          "outputs_hidden": false
         },
         "nteract": {
           "transient": {
@@ -383,7 +434,10 @@
       "source": [
         "# Retrieve and save your best automl model.\n",
         "\n",
-        "### YOUR CODE HERE ###"
+        "### YOUR CODE HERE ###\n",
+        "best_run, fitted_model = automl_run.get_output()\n",
+        "print(best_run)\n",
+        "print(fitted_model)"
       ],
       "outputs": [],
       "execution_count": null,
@@ -413,6 +467,13 @@
     },
     "nteract": {
       "version": "nteract-front-end@1.0.0"
+    },
+    "microsoft": {
+      "host": {
+        "AzureML": {
+          "notebookHasBeenCompleted": true
+        }
+      }
     }
   },
   "nbformat": 4,
