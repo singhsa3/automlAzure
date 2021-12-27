@@ -2686,3 +2686,563 @@
 2021-12-26 22:34:46.812 - INFO - 16098 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=1.27[ms]
 2021-12-26 22:34:46.813 - INFO - 16098 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=Run, HowEnded=Success, Duration=158.66[ms]
 2021-12-26 22:34:46.813 - INFO - 16098 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=Run, HowEnded=Success, Duration=158.66[ms]
+2021-12-27 01:41:11.905 - INFO - 22055 - azureml.automl.runtime.distributed.utilities.horovod_initialized:70 - Horovod not found in current environment. Distribution via Horovod will be disabled.
+2021-12-27 01:41:13.869 - INFO - 22055 - azureml.automl.runtime.sweeping.meta_sweeper._sweep_internal:333 - Begin Feature Sweeping...
+2021-12-27 01:41:13.869 - INFO - 22055 - azureml.automl.runtime.sweeping.meta_sweeper._sweep_internal:333 - Begin Feature Sweeping...
+2021-12-27 01:41:13.931 - INFO - 22055 - azureml.automl.runtime.sweeping.binary_sweeper.sweep:43 - BinarySweeper {"SweeperType": "binary", "DataProvider": "DiskBasedDataProvider", "BaselineTransforms": ["SimpleImputer"], "ExperimentTransforms": ["SimpleImputer", "MaxAbsScaler", "MiniBatchKMeans"], "Estimator": "LogisticRegression", "Scorer": "ClassificationScorer", "MetricName": "accuracy", "Epsilon": 0.005, "IncludeBaselineInExperiment": true, "UseCrossValidation": false, "Task": "classification"}: Begin sweeping
+2021-12-27 01:41:13.931 - INFO - 22055 - azureml.automl.runtime.sweeping.binary_sweeper.sweep:43 - BinarySweeper {"SweeperType": "binary", "DataProvider": "DiskBasedDataProvider", "BaselineTransforms": ["SimpleImputer"], "ExperimentTransforms": ["SimpleImputer", "MaxAbsScaler", "MiniBatchKMeans"], "Estimator": "LogisticRegression", "Scorer": "ClassificationScorer", "MetricName": "accuracy", "Epsilon": 0.005, "IncludeBaselineInExperiment": true, "UseCrossValidation": false, "Task": "classification"}: Begin sweeping
+2021-12-27 01:41:14.144 - INFO - 22055 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (526,), 'y_pred_probs': (526, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:41:14.144 - INFO - 22055 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (526,), 'y_pred_probs': (526, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:41:14.159 - INFO - 22055 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:41:14.159 - INFO - 22055 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:41:14.160 - INFO - 22055 - azureml.automl.runtime.scoring.classification_scorer.score:52 - Feature sweep calculation: accuracy = 0.8935361216730038.
+2021-12-27 01:41:14.160 - INFO - 22055 - azureml.automl.runtime.scoring.classification_scorer.score:52 - Feature sweep calculation: accuracy = 0.8935361216730038.
+2021-12-27 01:41:14.161 - INFO - 22055 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (526,), 'y_pred_probs': (526, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:41:14.161 - INFO - 22055 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (526,), 'y_pred_probs': (526, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:41:14.162 - INFO - 22055 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:41:14.162 - INFO - 22055 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:41:14.163 - INFO - 22055 - azureml.automl.runtime.scoring.classification_scorer.score:52 - Feature sweep calculation: accuracy = 0.8935361216730038.
+2021-12-27 01:41:14.163 - INFO - 22055 - azureml.automl.runtime.scoring.classification_scorer.score:52 - Feature sweep calculation: accuracy = 0.8935361216730038.
+2021-12-27 01:41:14.163 - INFO - 22055 - azureml.automl.runtime.sweeping.binary_sweeper.sweep:105 - BinarySweeper {"SweeperType": "binary", "DataProvider": "DiskBasedDataProvider", "BaselineTransforms": ["SimpleImputer"], "ExperimentTransforms": ["SimpleImputer", "MaxAbsScaler", "MiniBatchKMeans"], "Estimator": "LogisticRegression", "Scorer": "ClassificationScorer", "MetricName": "accuracy", "Epsilon": 0.005, "IncludeBaselineInExperiment": true, "UseCrossValidation": false, "Task": "classification"}: Baseline score=0.8935361216730038, Experiment score=0.8935361216730038, IsExperimentBetter=False
+2021-12-27 01:41:14.163 - INFO - 22055 - azureml.automl.runtime.sweeping.binary_sweeper.sweep:105 - BinarySweeper {"SweeperType": "binary", "DataProvider": "DiskBasedDataProvider", "BaselineTransforms": ["SimpleImputer"], "ExperimentTransforms": ["SimpleImputer", "MaxAbsScaler", "MiniBatchKMeans"], "Estimator": "LogisticRegression", "Scorer": "ClassificationScorer", "MetricName": "accuracy", "Epsilon": 0.005, "IncludeBaselineInExperiment": true, "UseCrossValidation": false, "Task": "classification"}: Baseline score=0.8935361216730038, Experiment score=0.8935361216730038, IsExperimentBetter=False
+2021-12-27 01:41:14.164 - INFO - 22055 - azureml.automl.runtime.sweeping.binary_sweeper.sweep:111 - BinarySweeper {"SweeperType": "binary", "DataProvider": "DiskBasedDataProvider", "BaselineTransforms": ["SimpleImputer"], "ExperimentTransforms": ["SimpleImputer", "MaxAbsScaler", "MiniBatchKMeans"], "Estimator": "LogisticRegression", "Scorer": "ClassificationScorer", "MetricName": "accuracy", "Epsilon": 0.005, "IncludeBaselineInExperiment": true, "UseCrossValidation": false, "Task": "classification"}: Finished sweeping.
+2021-12-27 01:41:14.164 - INFO - 22055 - azureml.automl.runtime.sweeping.binary_sweeper.sweep:111 - BinarySweeper {"SweeperType": "binary", "DataProvider": "DiskBasedDataProvider", "BaselineTransforms": ["SimpleImputer"], "ExperimentTransforms": ["SimpleImputer", "MaxAbsScaler", "MiniBatchKMeans"], "Estimator": "LogisticRegression", "Scorer": "ClassificationScorer", "MetricName": "accuracy", "Epsilon": 0.005, "IncludeBaselineInExperiment": true, "UseCrossValidation": false, "Task": "classification"}: Finished sweeping.
+2021-12-27 01:41:14.168 - INFO - 22055 - azureml.automl.runtime.sweeping.meta_sweeper._sweep_internal:379 - Finished sweeping with all feature sweepers.
+2021-12-27 01:41:14.168 - INFO - 22055 - azureml.automl.runtime.sweeping.meta_sweeper._sweep_internal:379 - Finished sweeping with all feature sweepers.
+2021-12-27 01:41:19.965 - INFO - 22324 - azureml.automl.runtime.distributed.utilities.horovod_initialized:70 - Horovod not found in current environment. Distribution via Horovod will be disabled.
+2021-12-27 01:41:22.125 - INFO - 22324 - azureml.automl.runtime.sweeping.meta_sweeper._sweep_balancing_internal:312 - Begin Balancing Sweeping...
+2021-12-27 01:41:22.125 - INFO - 22324 - azureml.automl.runtime.sweeping.meta_sweeper._sweep_balancing_internal:312 - Begin Balancing Sweeping...
+2021-12-27 01:41:22.170 - INFO - 22324 - azureml.automl.runtime.sweeping.meta_sweeper._sweep_balancing_internal:323 - Finished sweeping with all balancing sweepers.
+2021-12-27 01:41:22.170 - INFO - 22324 - azureml.automl.runtime.sweeping.meta_sweeper._sweep_balancing_internal:323 - Finished sweeping with all balancing sweepers.
+2021-12-27 01:41:34.594 - INFO - 22830 - azureml.automl.runtime.distributed.utilities.horovod_initialized:70 - Horovod not found in current environment. Distribution via Horovod will be disabled.
+2021-12-27 01:41:36.027 - INFO - 22830 - azureml.automl.runtime.experiment_store.__init__:1028 - Requested a new ExperimentStore instance.
+2021-12-27 01:41:36.027 - INFO - 22830 - azureml.automl.runtime.experiment_store.__init__:1028 - Requested a new ExperimentStore instance.
+2021-12-27 01:41:36.052 - INFO - 22830 - azureml.automl.runtime.experiment_store.__init__:1044 - Created ExperimentStore with ID: 140106302708872.
+2021-12-27 01:41:36.052 - INFO - 22830 - azureml.automl.runtime.experiment_store.__init__:1044 - Created ExperimentStore with ID: 140106302708872.
+2021-12-27 01:41:36.069 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.load:229 - Loading from file cache
+2021-12-27 01:41:36.069 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.load:229 - Loading from file cache
+2021-12-27 01:41:36.096 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: load
+2021-12-27 01:41:36.096 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: load
+2021-12-27 01:41:36.118 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:263 - Loading the saved_as object from cache.
+2021-12-27 01:41:36.118 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:263 - Loading the saved_as object from cache.
+2021-12-27 01:41:36.203 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:266 - The saved_as object is: {'split_keys': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.SCIPY: 3>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'X_raw': <_SavedAsProtocol.PICKLE: 1>, 'y_raw': <_SavedAsProtocol.NUMPY: 2>, 'X_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_lazy': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_partitioned': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Timeseries': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Regression': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Classification': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentTransformers': <_SavedAsProtocol.PICKLE: 1>}
+2021-12-27 01:41:36.203 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:266 - The saved_as object is: {'split_keys': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.SCIPY: 3>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'X_raw': <_SavedAsProtocol.PICKLE: 1>, 'y_raw': <_SavedAsProtocol.NUMPY: 2>, 'X_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_lazy': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_partitioned': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Timeseries': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Regression': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Classification': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentTransformers': <_SavedAsProtocol.PICKLE: 1>}
+2021-12-27 01:41:36.229 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=load, HowEnded=Success, Duration=132.79[ms]
+2021-12-27 01:41:36.229 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=load, HowEnded=Success, Duration=132.79[ms]
+2021-12-27 01:41:36.230 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.230 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.230 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_lazy
+2021-12-27 01:41:36.230 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_lazy
+2021-12-27 01:41:36.243 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.94[ms]
+2021-12-27 01:41:36.243 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.94[ms]
+2021-12-27 01:41:36.243 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.243 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.244 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_partitioned
+2021-12-27 01:41:36.244 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_partitioned
+2021-12-27 01:41:36.256 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.68[ms]
+2021-12-27 01:41:36.256 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.68[ms]
+2021-12-27 01:41:36.257 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.257 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.257 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata
+2021-12-27 01:41:36.257 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata
+2021-12-27 01:41:36.269 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.27[ms]
+2021-12-27 01:41:36.269 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.27[ms]
+2021-12-27 01:41:36.270 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.270 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.270 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Timeseries
+2021-12-27 01:41:36.270 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Timeseries
+2021-12-27 01:41:36.283 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.03[ms]
+2021-12-27 01:41:36.283 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.03[ms]
+2021-12-27 01:41:36.285 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.285 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.285 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Regression
+2021-12-27 01:41:36.285 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Regression
+2021-12-27 01:41:36.298 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.37[ms]
+2021-12-27 01:41:36.298 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.37[ms]
+2021-12-27 01:41:36.299 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.299 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.299 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Classification
+2021-12-27 01:41:36.299 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Classification
+2021-12-27 01:41:36.311 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.42[ms]
+2021-12-27 01:41:36.311 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.42[ms]
+2021-12-27 01:41:36.312 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.312 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.312 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentTransformers
+2021-12-27 01:41:36.312 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentTransformers
+2021-12-27 01:41:36.326 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.64[ms]
+2021-12-27 01:41:36.326 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.64[ms]
+2021-12-27 01:41:36.328 - INFO - 22830 - azureml.automl.runtime.featurization.data_transformer.__init__:189 - Feature sweeping enabled: False
+2021-12-27 01:41:36.328 - INFO - 22830 - azureml.automl.runtime.featurization.data_transformer.__init__:189 - Feature sweeping enabled: False
+2021-12-27 01:41:36.329 - INFO - 22830 - azureml.automl.runtime.featurization.data_transformer.__init__:190 - Feature sweeping timeout: 86400
+2021-12-27 01:41:36.329 - INFO - 22830 - azureml.automl.runtime.featurization.data_transformer.__init__:190 - Feature sweeping timeout: 86400
+2021-12-27 01:41:36.339 - INFO - 22830 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: Run
+2021-12-27 01:41:36.339 - INFO - 22830 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: Run
+2021-12-27 01:41:36.339 - INFO - 22830 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: RunCV
+2021-12-27 01:41:36.339 - INFO - 22830 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: RunCV
+2021-12-27 01:41:36.340 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.340 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.340 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: split_keys
+2021-12-27 01:41:36.340 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: split_keys
+2021-12-27 01:41:36.354 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.68[ms]
+2021-12-27 01:41:36.354 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.68[ms]
+2021-12-27 01:41:36.354 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.354 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.354 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized_cv_split_0
+2021-12-27 01:41:36.354 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized_cv_split_0
+2021-12-27 01:41:36.381 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=27.07[ms]
+2021-12-27 01:41:36.381 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=27.07[ms]
+2021-12-27 01:41:36.384 - INFO - 22830 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:41:36.384 - INFO - 22830 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:41:36.606 - INFO - 22830 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=222.79[ms]
+2021-12-27 01:41:36.606 - INFO - 22830 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=222.79[ms]
+2021-12-27 01:41:36.607 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: Predict
+2021-12-27 01:41:36.607 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: Predict
+2021-12-27 01:41:36.616 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=8.24[ms]
+2021-12-27 01:41:36.616 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=8.24[ms]
+2021-12-27 01:41:36.616 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: ComputeMetrics
+2021-12-27 01:41:36.616 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: ComputeMetrics
+2021-12-27 01:41:36.617 - INFO - 22830 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (877,), 'y_pred_probs': (877, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:41:36.617 - INFO - 22830 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (877,), 'y_pred_probs': (877, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:41:36.618 - INFO - 22830 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:41:36.618 - INFO - 22830 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:41:36.651 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=34.77[ms]
+2021-12-27 01:41:36.651 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=34.77[ms]
+2021-12-27 01:41:36.651 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.651 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.652 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized_cv_split_1
+2021-12-27 01:41:36.652 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized_cv_split_1
+2021-12-27 01:41:36.681 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=29.11[ms]
+2021-12-27 01:41:36.681 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=29.11[ms]
+2021-12-27 01:41:36.682 - INFO - 22830 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:41:36.682 - INFO - 22830 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:41:36.795 - INFO - 22830 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=112.5[ms]
+2021-12-27 01:41:36.795 - INFO - 22830 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=112.5[ms]
+2021-12-27 01:41:36.795 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: Predict
+2021-12-27 01:41:36.795 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: Predict
+2021-12-27 01:41:36.803 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=7.78[ms]
+2021-12-27 01:41:36.803 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=7.78[ms]
+2021-12-27 01:41:36.804 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: ComputeMetrics
+2021-12-27 01:41:36.804 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: ComputeMetrics
+2021-12-27 01:41:36.804 - INFO - 22830 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (877,), 'y_pred_probs': (877, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:41:36.804 - INFO - 22830 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (877,), 'y_pred_probs': (877, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:41:36.806 - INFO - 22830 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:41:36.806 - INFO - 22830 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:41:36.838 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=33.91[ms]
+2021-12-27 01:41:36.838 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=33.91[ms]
+2021-12-27 01:41:36.838 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.838 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:36.839 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized_cv_split_2
+2021-12-27 01:41:36.839 - INFO - 22830 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized_cv_split_2
+2021-12-27 01:41:36.886 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=47.92[ms]
+2021-12-27 01:41:36.886 - INFO - 22830 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=47.92[ms]
+2021-12-27 01:41:36.888 - INFO - 22830 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:41:36.888 - INFO - 22830 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:41:37.007 - INFO - 22830 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=119.65[ms]
+2021-12-27 01:41:37.007 - INFO - 22830 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=119.65[ms]
+2021-12-27 01:41:37.008 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: Predict
+2021-12-27 01:41:37.008 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: Predict
+2021-12-27 01:41:37.016 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=8.11[ms]
+2021-12-27 01:41:37.016 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=8.11[ms]
+2021-12-27 01:41:37.017 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: ComputeMetrics
+2021-12-27 01:41:37.017 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: ComputeMetrics
+2021-12-27 01:41:37.017 - INFO - 22830 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (876,), 'y_pred_probs': (876, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:41:37.017 - INFO - 22830 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (876,), 'y_pred_probs': (876, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:41:37.018 - INFO - 22830 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:41:37.018 - INFO - 22830 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:41:37.060 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=43.01[ms]
+2021-12-27 01:41:37.060 - INFO - 22830 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=43.01[ms]
+2021-12-27 01:41:37.060 - INFO - 22830 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=RunCV, HowEnded=Success, Duration=720.75[ms]
+2021-12-27 01:41:37.060 - INFO - 22830 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=RunCV, HowEnded=Success, Duration=720.75[ms]
+2021-12-27 01:41:37.061 - INFO - 22830 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: RunCVMean
+2021-12-27 01:41:37.061 - INFO - 22830 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: RunCVMean
+2021-12-27 01:41:37.066 - INFO - 22830 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=RunCVMean, HowEnded=Success, Duration=5.17[ms]
+2021-12-27 01:41:37.066 - INFO - 22830 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=RunCVMean, HowEnded=Success, Duration=5.17[ms]
+2021-12-27 01:41:37.066 - INFO - 22830 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=Run, HowEnded=Success, Duration=727.28[ms]
+2021-12-27 01:41:37.066 - INFO - 22830 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=Run, HowEnded=Success, Duration=727.28[ms]
+2021-12-27 01:41:42.388 - INFO - 23214 - azureml.automl.runtime.distributed.utilities.horovod_initialized:70 - Horovod not found in current environment. Distribution via Horovod will be disabled.
+2021-12-27 01:41:43.814 - INFO - 23214 - azureml.automl.runtime.experiment_store.__init__:1028 - Requested a new ExperimentStore instance.
+2021-12-27 01:41:43.814 - INFO - 23214 - azureml.automl.runtime.experiment_store.__init__:1028 - Requested a new ExperimentStore instance.
+2021-12-27 01:41:43.851 - INFO - 23214 - azureml.automl.runtime.experiment_store.__init__:1044 - Created ExperimentStore with ID: 139919608675576.
+2021-12-27 01:41:43.851 - INFO - 23214 - azureml.automl.runtime.experiment_store.__init__:1044 - Created ExperimentStore with ID: 139919608675576.
+2021-12-27 01:41:43.884 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.load:229 - Loading from file cache
+2021-12-27 01:41:43.884 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.load:229 - Loading from file cache
+2021-12-27 01:41:43.906 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: load
+2021-12-27 01:41:43.906 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: load
+2021-12-27 01:41:43.941 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:263 - Loading the saved_as object from cache.
+2021-12-27 01:41:43.941 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:263 - Loading the saved_as object from cache.
+2021-12-27 01:41:44.001 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:266 - The saved_as object is: {'split_keys': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.SCIPY: 3>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'X_raw': <_SavedAsProtocol.PICKLE: 1>, 'y_raw': <_SavedAsProtocol.NUMPY: 2>, 'X_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_lazy': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_partitioned': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Timeseries': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Regression': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Classification': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentTransformers': <_SavedAsProtocol.PICKLE: 1>}
+2021-12-27 01:41:44.001 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:266 - The saved_as object is: {'split_keys': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.SCIPY: 3>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'X_raw': <_SavedAsProtocol.PICKLE: 1>, 'y_raw': <_SavedAsProtocol.NUMPY: 2>, 'X_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_lazy': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_partitioned': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Timeseries': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Regression': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Classification': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentTransformers': <_SavedAsProtocol.PICKLE: 1>}
+2021-12-27 01:41:44.020 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=load, HowEnded=Success, Duration=113.72[ms]
+2021-12-27 01:41:44.020 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=load, HowEnded=Success, Duration=113.72[ms]
+2021-12-27 01:41:44.021 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.021 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.021 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_lazy
+2021-12-27 01:41:44.021 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_lazy
+2021-12-27 01:41:44.034 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.07[ms]
+2021-12-27 01:41:44.034 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.07[ms]
+2021-12-27 01:41:44.034 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.034 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.035 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_partitioned
+2021-12-27 01:41:44.035 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_partitioned
+2021-12-27 01:41:44.048 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.14[ms]
+2021-12-27 01:41:44.048 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.14[ms]
+2021-12-27 01:41:44.048 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.048 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.049 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata
+2021-12-27 01:41:44.049 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata
+2021-12-27 01:41:44.061 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.48[ms]
+2021-12-27 01:41:44.061 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.48[ms]
+2021-12-27 01:41:44.061 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.061 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.062 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Timeseries
+2021-12-27 01:41:44.062 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Timeseries
+2021-12-27 01:41:44.075 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.23[ms]
+2021-12-27 01:41:44.075 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.23[ms]
+2021-12-27 01:41:44.075 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.075 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.076 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Regression
+2021-12-27 01:41:44.076 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Regression
+2021-12-27 01:41:44.094 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=19.19[ms]
+2021-12-27 01:41:44.094 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=19.19[ms]
+2021-12-27 01:41:44.095 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.095 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.095 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Classification
+2021-12-27 01:41:44.095 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Classification
+2021-12-27 01:41:44.109 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.41[ms]
+2021-12-27 01:41:44.109 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.41[ms]
+2021-12-27 01:41:44.109 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.109 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.110 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentTransformers
+2021-12-27 01:41:44.110 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentTransformers
+2021-12-27 01:41:44.124 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=14.64[ms]
+2021-12-27 01:41:44.124 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=14.64[ms]
+2021-12-27 01:41:44.128 - INFO - 23214 - azureml.automl.runtime.featurization.data_transformer.__init__:189 - Feature sweeping enabled: False
+2021-12-27 01:41:44.128 - INFO - 23214 - azureml.automl.runtime.featurization.data_transformer.__init__:189 - Feature sweeping enabled: False
+2021-12-27 01:41:44.128 - INFO - 23214 - azureml.automl.runtime.featurization.data_transformer.__init__:190 - Feature sweeping timeout: 86400
+2021-12-27 01:41:44.128 - INFO - 23214 - azureml.automl.runtime.featurization.data_transformer.__init__:190 - Feature sweeping timeout: 86400
+2021-12-27 01:41:44.137 - INFO - 23214 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: Run
+2021-12-27 01:41:44.137 - INFO - 23214 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: Run
+2021-12-27 01:41:44.138 - INFO - 23214 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: TrainFull
+2021-12-27 01:41:44.138 - INFO - 23214 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: TrainFull
+2021-12-27 01:41:44.139 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.139 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.140 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: full_training_dataset
+2021-12-27 01:41:44.140 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: full_training_dataset
+2021-12-27 01:41:44.140 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.64[ms]
+2021-12-27 01:41:44.140 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.64[ms]
+2021-12-27 01:41:44.140 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.140 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.141 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X
+2021-12-27 01:41:44.141 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X
+2021-12-27 01:41:44.180 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y
+2021-12-27 01:41:44.180 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y
+2021-12-27 01:41:44.196 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: sample_weight
+2021-12-27 01:41:44.196 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: sample_weight
+2021-12-27 01:41:44.209 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=68.49[ms]
+2021-12-27 01:41:44.209 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=68.49[ms]
+2021-12-27 01:41:44.209 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.209 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.210 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: full_validation_dataset
+2021-12-27 01:41:44.210 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: full_validation_dataset
+2021-12-27 01:41:44.210 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.64[ms]
+2021-12-27 01:41:44.210 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.64[ms]
+2021-12-27 01:41:44.210 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.210 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.211 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X_valid
+2021-12-27 01:41:44.211 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X_valid
+2021-12-27 01:41:44.223 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y_valid
+2021-12-27 01:41:44.223 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y_valid
+2021-12-27 01:41:44.263 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: sample_weight_valid
+2021-12-27 01:41:44.263 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: sample_weight_valid
+2021-12-27 01:41:44.277 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=66.33[ms]
+2021-12-27 01:41:44.277 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=66.33[ms]
+2021-12-27 01:41:44.277 - INFO - 23214 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:41:44.277 - INFO - 23214 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:41:44.402 - INFO - 23214 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=124.85[ms]
+2021-12-27 01:41:44.402 - INFO - 23214 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=124.85[ms]
+2021-12-27 01:41:44.403 - INFO - 23214 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=TrainFull, HowEnded=Success, Duration=265.1[ms]
+2021-12-27 01:41:44.403 - INFO - 23214 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=TrainFull, HowEnded=Success, Duration=265.1[ms]
+2021-12-27 01:41:44.403 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.403 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.404 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: full_test_dataset
+2021-12-27 01:41:44.404 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: full_test_dataset
+2021-12-27 01:41:44.404 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.6[ms]
+2021-12-27 01:41:44.404 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.6[ms]
+2021-12-27 01:41:44.404 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.404 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:41:44.405 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X_test
+2021-12-27 01:41:44.405 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X_test
+2021-12-27 01:41:44.405 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y_test
+2021-12-27 01:41:44.405 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y_test
+2021-12-27 01:41:44.405 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: sample_weight_test
+2021-12-27 01:41:44.405 - INFO - 23214 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: sample_weight_test
+2021-12-27 01:41:44.405 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=1.14[ms]
+2021-12-27 01:41:44.405 - INFO - 23214 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=1.14[ms]
+2021-12-27 01:41:44.406 - INFO - 23214 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=Run, HowEnded=Success, Duration=268.35[ms]
+2021-12-27 01:41:44.406 - INFO - 23214 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=Run, HowEnded=Success, Duration=268.35[ms]
+2021-12-27 01:41:59.121 - INFO - 23854 - azureml.automl.runtime.distributed.utilities.horovod_initialized:70 - Horovod not found in current environment. Distribution via Horovod will be disabled.
+2021-12-27 01:42:00.574 - INFO - 23854 - azureml.automl.runtime.experiment_store.__init__:1028 - Requested a new ExperimentStore instance.
+2021-12-27 01:42:00.574 - INFO - 23854 - azureml.automl.runtime.experiment_store.__init__:1028 - Requested a new ExperimentStore instance.
+2021-12-27 01:42:00.602 - INFO - 23854 - azureml.automl.runtime.experiment_store.__init__:1044 - Created ExperimentStore with ID: 140702534352120.
+2021-12-27 01:42:00.602 - INFO - 23854 - azureml.automl.runtime.experiment_store.__init__:1044 - Created ExperimentStore with ID: 140702534352120.
+2021-12-27 01:42:00.630 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.load:229 - Loading from file cache
+2021-12-27 01:42:00.630 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.load:229 - Loading from file cache
+2021-12-27 01:42:00.648 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: load
+2021-12-27 01:42:00.648 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: load
+2021-12-27 01:42:00.671 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:263 - Loading the saved_as object from cache.
+2021-12-27 01:42:00.671 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:263 - Loading the saved_as object from cache.
+2021-12-27 01:42:00.733 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:266 - The saved_as object is: {'split_keys': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.SCIPY: 3>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'X_raw': <_SavedAsProtocol.PICKLE: 1>, 'y_raw': <_SavedAsProtocol.NUMPY: 2>, 'X_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_lazy': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_partitioned': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Timeseries': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Regression': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Classification': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentTransformers': <_SavedAsProtocol.PICKLE: 1>}
+2021-12-27 01:42:00.733 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:266 - The saved_as object is: {'split_keys': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.SCIPY: 3>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'X_raw': <_SavedAsProtocol.PICKLE: 1>, 'y_raw': <_SavedAsProtocol.NUMPY: 2>, 'X_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_lazy': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_partitioned': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Timeseries': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Regression': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Classification': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentTransformers': <_SavedAsProtocol.PICKLE: 1>}
+2021-12-27 01:42:00.758 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=load, HowEnded=Success, Duration=109.9[ms]
+2021-12-27 01:42:00.758 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=load, HowEnded=Success, Duration=109.9[ms]
+2021-12-27 01:42:00.759 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.759 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.759 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_lazy
+2021-12-27 01:42:00.759 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_lazy
+2021-12-27 01:42:00.802 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=42.84[ms]
+2021-12-27 01:42:00.802 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=42.84[ms]
+2021-12-27 01:42:00.802 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.802 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.803 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_partitioned
+2021-12-27 01:42:00.803 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_partitioned
+2021-12-27 01:42:00.815 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.83[ms]
+2021-12-27 01:42:00.815 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.83[ms]
+2021-12-27 01:42:00.817 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.817 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.817 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata
+2021-12-27 01:42:00.817 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata
+2021-12-27 01:42:00.829 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.39[ms]
+2021-12-27 01:42:00.829 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.39[ms]
+2021-12-27 01:42:00.830 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.830 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.830 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Timeseries
+2021-12-27 01:42:00.830 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Timeseries
+2021-12-27 01:42:00.843 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.53[ms]
+2021-12-27 01:42:00.843 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.53[ms]
+2021-12-27 01:42:00.844 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.844 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.844 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Regression
+2021-12-27 01:42:00.844 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Regression
+2021-12-27 01:42:00.857 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.82[ms]
+2021-12-27 01:42:00.857 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.82[ms]
+2021-12-27 01:42:00.857 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.857 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.858 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Classification
+2021-12-27 01:42:00.858 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Classification
+2021-12-27 01:42:00.870 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.76[ms]
+2021-12-27 01:42:00.870 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=12.76[ms]
+2021-12-27 01:42:00.871 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.871 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.871 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentTransformers
+2021-12-27 01:42:00.871 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentTransformers
+2021-12-27 01:42:00.886 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=15.33[ms]
+2021-12-27 01:42:00.886 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=15.33[ms]
+2021-12-27 01:42:00.890 - INFO - 23854 - azureml.automl.runtime.featurization.data_transformer.__init__:189 - Feature sweeping enabled: False
+2021-12-27 01:42:00.890 - INFO - 23854 - azureml.automl.runtime.featurization.data_transformer.__init__:189 - Feature sweeping enabled: False
+2021-12-27 01:42:00.891 - INFO - 23854 - azureml.automl.runtime.featurization.data_transformer.__init__:190 - Feature sweeping timeout: 86400
+2021-12-27 01:42:00.891 - INFO - 23854 - azureml.automl.runtime.featurization.data_transformer.__init__:190 - Feature sweeping timeout: 86400
+2021-12-27 01:42:00.900 - INFO - 23854 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: Run
+2021-12-27 01:42:00.900 - INFO - 23854 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: Run
+2021-12-27 01:42:00.901 - INFO - 23854 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: RunCV
+2021-12-27 01:42:00.901 - INFO - 23854 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: RunCV
+2021-12-27 01:42:00.901 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.901 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.901 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: split_keys
+2021-12-27 01:42:00.901 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: split_keys
+2021-12-27 01:42:00.917 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=16.1[ms]
+2021-12-27 01:42:00.917 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=16.1[ms]
+2021-12-27 01:42:00.918 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.918 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:00.918 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized_cv_split_0
+2021-12-27 01:42:00.918 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized_cv_split_0
+2021-12-27 01:42:00.942 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=24.17[ms]
+2021-12-27 01:42:00.942 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=24.17[ms]
+2021-12-27 01:42:00.944 - INFO - 23854 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:42:00.944 - INFO - 23854 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:42:01.065 - INFO - 23854 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=121.22[ms]
+2021-12-27 01:42:01.065 - INFO - 23854 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=121.22[ms]
+2021-12-27 01:42:01.066 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: Predict
+2021-12-27 01:42:01.066 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: Predict
+2021-12-27 01:42:01.073 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=6.99[ms]
+2021-12-27 01:42:01.073 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=6.99[ms]
+2021-12-27 01:42:01.073 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: ComputeMetrics
+2021-12-27 01:42:01.073 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: ComputeMetrics
+2021-12-27 01:42:01.074 - INFO - 23854 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (877,), 'y_pred_probs': (877, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:42:01.074 - INFO - 23854 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (877,), 'y_pred_probs': (877, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:42:01.075 - INFO - 23854 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:42:01.075 - INFO - 23854 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:42:01.105 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=31.72[ms]
+2021-12-27 01:42:01.105 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=31.72[ms]
+2021-12-27 01:42:01.106 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:01.106 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:01.106 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized_cv_split_1
+2021-12-27 01:42:01.106 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized_cv_split_1
+2021-12-27 01:42:01.136 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=29.84[ms]
+2021-12-27 01:42:01.136 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=29.84[ms]
+2021-12-27 01:42:01.137 - INFO - 23854 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:42:01.137 - INFO - 23854 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:42:01.242 - INFO - 23854 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=104.98[ms]
+2021-12-27 01:42:01.242 - INFO - 23854 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=104.98[ms]
+2021-12-27 01:42:01.243 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: Predict
+2021-12-27 01:42:01.243 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: Predict
+2021-12-27 01:42:01.250 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=6.75[ms]
+2021-12-27 01:42:01.250 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=6.75[ms]
+2021-12-27 01:42:01.250 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: ComputeMetrics
+2021-12-27 01:42:01.250 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: ComputeMetrics
+2021-12-27 01:42:01.251 - INFO - 23854 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (877,), 'y_pred_probs': (877, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:42:01.251 - INFO - 23854 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (877,), 'y_pred_probs': (877, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:42:01.252 - INFO - 23854 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:42:01.252 - INFO - 23854 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:42:01.282 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=31.18[ms]
+2021-12-27 01:42:01.282 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=31.18[ms]
+2021-12-27 01:42:01.282 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:01.282 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:01.283 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized_cv_split_2
+2021-12-27 01:42:01.283 - INFO - 23854 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: featurized_cv_split_2
+2021-12-27 01:42:01.307 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=24.57[ms]
+2021-12-27 01:42:01.307 - INFO - 23854 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=24.57[ms]
+2021-12-27 01:42:01.308 - INFO - 23854 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:42:01.308 - INFO - 23854 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:42:01.420 - INFO - 23854 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=112.2[ms]
+2021-12-27 01:42:01.420 - INFO - 23854 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=112.2[ms]
+2021-12-27 01:42:01.421 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: Predict
+2021-12-27 01:42:01.421 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: Predict
+2021-12-27 01:42:01.428 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=6.65[ms]
+2021-12-27 01:42:01.428 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=Predict, HowEnded=Success, Duration=6.65[ms]
+2021-12-27 01:42:01.428 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: ComputeMetrics
+2021-12-27 01:42:01.428 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:55 - ActivityStarted: ComputeMetrics
+2021-12-27 01:42:01.429 - INFO - 23854 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (876,), 'y_pred_probs': (876, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:42:01.429 - INFO - 23854 - azureml.automl.runtime.shared.score._validation.log_classification_debug:164 - Classification metrics debug: {'y_test': (876,), 'y_pred_probs': (876, 2), 'unique_y_test': (2,), 'class_labels': (2,), 'train_labels': (2,), 'n_missing_train': 0, 'n_missing_valid': 0, 'sample_weight': None}
+2021-12-27 01:42:01.430 - INFO - 23854 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:42:01.430 - INFO - 23854 - azureml.automl.runtime.shared.score._scoring_utilities.__init__:501 - No positive_label provided but detected a binary classification task
+2021-12-27 01:42:01.459 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=30.87[ms]
+2021-12-27 01:42:01.459 - INFO - 23854 - azureml.automl.runtime.shared.metrics_utilities._log_activity:93 - ActivityCompleted: Activity=ComputeMetrics, HowEnded=Success, Duration=30.87[ms]
+2021-12-27 01:42:01.460 - INFO - 23854 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=RunCV, HowEnded=Success, Duration=559.02[ms]
+2021-12-27 01:42:01.460 - INFO - 23854 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=RunCV, HowEnded=Success, Duration=559.02[ms]
+2021-12-27 01:42:01.460 - INFO - 23854 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: RunCVMean
+2021-12-27 01:42:01.460 - INFO - 23854 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: RunCVMean
+2021-12-27 01:42:01.464 - INFO - 23854 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=RunCVMean, HowEnded=Success, Duration=3.72[ms]
+2021-12-27 01:42:01.464 - INFO - 23854 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=RunCVMean, HowEnded=Success, Duration=3.72[ms]
+2021-12-27 01:42:01.464 - INFO - 23854 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=Run, HowEnded=Success, Duration=563.96[ms]
+2021-12-27 01:42:01.464 - INFO - 23854 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=Run, HowEnded=Success, Duration=563.96[ms]
+2021-12-27 01:42:06.516 - INFO - 24144 - azureml.automl.runtime.distributed.utilities.horovod_initialized:70 - Horovod not found in current environment. Distribution via Horovod will be disabled.
+2021-12-27 01:42:07.882 - INFO - 24144 - azureml.automl.runtime.experiment_store.__init__:1028 - Requested a new ExperimentStore instance.
+2021-12-27 01:42:07.882 - INFO - 24144 - azureml.automl.runtime.experiment_store.__init__:1028 - Requested a new ExperimentStore instance.
+2021-12-27 01:42:07.915 - INFO - 24144 - azureml.automl.runtime.experiment_store.__init__:1044 - Created ExperimentStore with ID: 140389113248904.
+2021-12-27 01:42:07.915 - INFO - 24144 - azureml.automl.runtime.experiment_store.__init__:1044 - Created ExperimentStore with ID: 140389113248904.
+2021-12-27 01:42:07.937 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.load:229 - Loading from file cache
+2021-12-27 01:42:07.937 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.load:229 - Loading from file cache
+2021-12-27 01:42:07.959 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: load
+2021-12-27 01:42:07.959 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: load
+2021-12-27 01:42:07.992 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:263 - Loading the saved_as object from cache.
+2021-12-27 01:42:07.992 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:263 - Loading the saved_as object from cache.
+2021-12-27 01:42:08.057 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:266 - The saved_as object is: {'split_keys': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.SCIPY: 3>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'X_raw': <_SavedAsProtocol.PICKLE: 1>, 'y_raw': <_SavedAsProtocol.NUMPY: 2>, 'X_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_lazy': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_partitioned': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Timeseries': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Regression': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Classification': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentTransformers': <_SavedAsProtocol.PICKLE: 1>}
+2021-12-27 01:42:08.057 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store._try_loading_saved_as_object:266 - The saved_as object is: {'split_keys': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'X': <_SavedAsProtocol.SCIPY: 3>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'sample_weight': <_SavedAsProtocol.PICKLE: 1>, 'X_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_valid': <_SavedAsProtocol.PICKLE: 1>, 'sample_weight_valid': <_SavedAsProtocol.PICKLE: 1>, 'X_raw': <_SavedAsProtocol.PICKLE: 1>, 'y_raw': <_SavedAsProtocol.NUMPY: 2>, 'X_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'y_raw_valid': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_lazy': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentData_partitioned': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Timeseries': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Regression': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata_Classification': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentMetadata': <_SavedAsProtocol.PICKLE: 1>, 'ExperimentTransformers': <_SavedAsProtocol.PICKLE: 1>}
+2021-12-27 01:42:08.084 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=load, HowEnded=Success, Duration=125.08[ms]
+2021-12-27 01:42:08.084 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=load, HowEnded=Success, Duration=125.08[ms]
+2021-12-27 01:42:08.085 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.085 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.085 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_lazy
+2021-12-27 01:42:08.085 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_lazy
+2021-12-27 01:42:08.100 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=15.18[ms]
+2021-12-27 01:42:08.100 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=15.18[ms]
+2021-12-27 01:42:08.101 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.101 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.101 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_partitioned
+2021-12-27 01:42:08.101 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentData_partitioned
+2021-12-27 01:42:08.114 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.01[ms]
+2021-12-27 01:42:08.114 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.01[ms]
+2021-12-27 01:42:08.114 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.114 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.115 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata
+2021-12-27 01:42:08.115 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata
+2021-12-27 01:42:08.339 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=224.27[ms]
+2021-12-27 01:42:08.339 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=224.27[ms]
+2021-12-27 01:42:08.339 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.339 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.340 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Timeseries
+2021-12-27 01:42:08.340 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Timeseries
+2021-12-27 01:42:08.361 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=21.11[ms]
+2021-12-27 01:42:08.361 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=21.11[ms]
+2021-12-27 01:42:08.362 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.362 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.362 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Regression
+2021-12-27 01:42:08.362 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Regression
+2021-12-27 01:42:08.377 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=15.01[ms]
+2021-12-27 01:42:08.377 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=15.01[ms]
+2021-12-27 01:42:08.377 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.377 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.378 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Classification
+2021-12-27 01:42:08.378 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentMetadata_Classification
+2021-12-27 01:42:08.391 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.52[ms]
+2021-12-27 01:42:08.391 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=13.52[ms]
+2021-12-27 01:42:08.391 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.391 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.392 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentTransformers
+2021-12-27 01:42:08.392 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: ExperimentTransformers
+2021-12-27 01:42:08.408 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=16.08[ms]
+2021-12-27 01:42:08.408 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=16.08[ms]
+2021-12-27 01:42:08.411 - INFO - 24144 - azureml.automl.runtime.featurization.data_transformer.__init__:189 - Feature sweeping enabled: False
+2021-12-27 01:42:08.411 - INFO - 24144 - azureml.automl.runtime.featurization.data_transformer.__init__:189 - Feature sweeping enabled: False
+2021-12-27 01:42:08.412 - INFO - 24144 - azureml.automl.runtime.featurization.data_transformer.__init__:190 - Feature sweeping timeout: 86400
+2021-12-27 01:42:08.412 - INFO - 24144 - azureml.automl.runtime.featurization.data_transformer.__init__:190 - Feature sweeping timeout: 86400
+2021-12-27 01:42:08.429 - INFO - 24144 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: Run
+2021-12-27 01:42:08.429 - INFO - 24144 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: Run
+2021-12-27 01:42:08.429 - INFO - 24144 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: TrainFull
+2021-12-27 01:42:08.429 - INFO - 24144 - azureml.automl.runtime.shared.runner._log_activity:55 - ActivityStarted: TrainFull
+2021-12-27 01:42:08.431 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.431 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.431 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: full_training_dataset
+2021-12-27 01:42:08.431 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: full_training_dataset
+2021-12-27 01:42:08.431 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.66[ms]
+2021-12-27 01:42:08.431 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.66[ms]
+2021-12-27 01:42:08.432 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.432 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.432 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X
+2021-12-27 01:42:08.432 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X
+2021-12-27 01:42:08.467 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y
+2021-12-27 01:42:08.467 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y
+2021-12-27 01:42:08.482 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: sample_weight
+2021-12-27 01:42:08.482 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: sample_weight
+2021-12-27 01:42:08.496 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=63.8[ms]
+2021-12-27 01:42:08.496 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=63.8[ms]
+2021-12-27 01:42:08.496 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.496 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.496 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: full_validation_dataset
+2021-12-27 01:42:08.496 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: full_validation_dataset
+2021-12-27 01:42:08.497 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.61[ms]
+2021-12-27 01:42:08.497 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.61[ms]
+2021-12-27 01:42:08.497 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.497 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.497 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X_valid
+2021-12-27 01:42:08.497 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X_valid
+2021-12-27 01:42:08.509 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y_valid
+2021-12-27 01:42:08.509 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y_valid
+2021-12-27 01:42:08.524 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: sample_weight_valid
+2021-12-27 01:42:08.524 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: sample_weight_valid
+2021-12-27 01:42:08.537 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=39.56[ms]
+2021-12-27 01:42:08.537 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=39.56[ms]
+2021-12-27 01:42:08.537 - INFO - 24144 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:42:08.537 - INFO - 24144 - azureml.automl.runtime._ml_engine.training.train._log_activity:55 - ActivityStarted: TimeFit
+2021-12-27 01:42:08.685 - INFO - 24144 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=148.0[ms]
+2021-12-27 01:42:08.685 - INFO - 24144 - azureml.automl.runtime._ml_engine.training.train._log_activity:93 - ActivityCompleted: Activity=TimeFit, HowEnded=Success, Duration=148.0[ms]
+2021-12-27 01:42:08.686 - INFO - 24144 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=TrainFull, HowEnded=Success, Duration=256.85[ms]
+2021-12-27 01:42:08.686 - INFO - 24144 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=TrainFull, HowEnded=Success, Duration=256.85[ms]
+2021-12-27 01:42:08.686 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.686 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.687 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: full_test_dataset
+2021-12-27 01:42:08.687 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: full_test_dataset
+2021-12-27 01:42:08.687 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.6[ms]
+2021-12-27 01:42:08.687 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=0.6[ms]
+2021-12-27 01:42:08.687 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.687 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:55 - ActivityStarted: get
+2021-12-27 01:42:08.688 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X_test
+2021-12-27 01:42:08.688 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: X_test
+2021-12-27 01:42:08.688 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y_test
+2021-12-27 01:42:08.688 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: y_test
+2021-12-27 01:42:08.688 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: sample_weight_test
+2021-12-27 01:42:08.688 - INFO - 24144 - azureml.automl.runtime.shared.file_cache_store.get:153 - Getting data for key: sample_weight_test
+2021-12-27 01:42:08.689 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=1.12[ms]
+2021-12-27 01:42:08.689 - INFO - 24144 - azureml.automl.runtime.shared.cache_store._log_activity:93 - ActivityCompleted: Activity=get, HowEnded=Success, Duration=1.12[ms]
+2021-12-27 01:42:08.689 - INFO - 24144 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=Run, HowEnded=Success, Duration=260.12[ms]
+2021-12-27 01:42:08.689 - INFO - 24144 - azureml.automl.runtime.shared.runner._log_activity:93 - ActivityCompleted: Activity=Run, HowEnded=Success, Duration=260.12[ms]
